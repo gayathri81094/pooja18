@@ -1,0 +1,26 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:security="http://www.springframework.org/schema/security"    
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/security
+       http://www.springframework.org/schema/security/spring-security.xsd">
+<security:http auto-config="true" use-expressions="true">
+<security:intercept-url pattern="/main" access="permitAll"/>
+<security:intercept-url pattern="" access="hasRole('ROLE-ADMIN')"/>
+<security:intercept-url pattern="" access="hasAnyRole('ROLE-ADMIN','ROLE-USER')"/>
+<security:form-login login-page="" login-processing-url="/process_login" default-target-url="/main" authentication-failure-url="/login?error"/>
+<security:logout logout-success-url="/login?logout"/>
+<security:csrf disabled="true"/>
+</security:http>
+<security:authentication-manager>
+<security:authentication-provider>
+<security:jdbc-user-service data-source-ref="dataSourece"
+authorities-by-username-query="SELECT email,roleid FROM USER1 WHERE email=?"
+user-by-username-query="SELECT email,passsword,enable FROM USER1 WHERE email=?"/>
+</security:authentication-provider>
+</security:authentication-manager>
+
+</beans>
+ -->
