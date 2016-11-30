@@ -70,12 +70,12 @@ public class HomeController {
 	    	
 			return new ModelAndView("Listpage","lobj",prod);
 	    }
-	    @RequestMapping("/getproductbyid/{productid}")
+	    /*@RequestMapping("/getproductbyid/{productid}")
 	    public ModelAndView list(@PathVariable(value="productid")int productid){
 	    	Product ob1=pd.getproductbyid(productid);
 	    	return new ModelAndView("productpage","showobj",ob1);
 	    	
-	    }
+	    }*/
 	    
 	    @RequestMapping("/admin/product/update/{productid}")
 	    public ModelAndView editproductform(@PathVariable(value="productid")int productid)

@@ -28,7 +28,7 @@
         <ul class="dropdown-menu">
           <li><a href="Catog?cat=LivingRoom">LivingRoom</a></li>
           <li><a href="Catog?cat=BedRoom">BedRoom</a></li>
-          <li><a href="categories?cat=DiningRoom">DiningRoom</a></li>
+          <li><a href="Catog?cat=DiningRoom">DiningRoom</a></li>
            </ul>
       </li>
          
